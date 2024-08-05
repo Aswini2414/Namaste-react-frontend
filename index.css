@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark{
+  background:#343a40;
+}
+
+.main{
+  font-family: Roboto;
+  min-height: 100vh;
+  max-width:100%;
+  overflow-x:hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-ele{
+  margin-top:auto;
+}
+
+
+img,
+video {
+  max-width: none;
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: start;
+    margin-top:8px;
+  }
+
+  .description{
+    overflow:hidden;
+  }
+}
